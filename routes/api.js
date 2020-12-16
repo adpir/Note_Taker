@@ -1,30 +1,51 @@
-// const http = require("http");
-const fs = require("fs");
-// const db = require("db.json")
+const app=require("express").Router()
+const fs= require("fs");
+let db = require("../db/db.json");
 
-app.get("/",function(req,res){
-    res.sendfile(path.join(__dirname,"notes.html"));
+app.get("/api/notes",function(req,res){
+    db=JSON.parse(fs.readFileSync("./db/db.json"))
+    console.log(db);
+    res.json(db);
+
 });
 
 //GET /api/notes - Should read the db.json file and return all saved notes as JSON.
-function handleNoteSave (req,res){
-    fs.readFile(__dirname + "db.json")
-}
 
 //   app.get("/api/notes", function(req, res) {
 //     return res.json(notes);
 //   });
 
-//   app.get("/api/notes/:notes", function(req, res) {
-//     let chosen = req.params.notes;
+app.post("/api/notes", function(req, res) {
+    let newNote= {
+        id:Math.floor(Math.random()*100),
+        title: req.body.title,
+        text:req.body.text,
+    }
+    console.log("post",newNote)
+    db.push(newNote);
+    fs.writeFileSync("./db/db.json",JSON.stringify (db),function (error){
+        if (error) throw error
+        console.log(db);
+        res.json(db);
+    });
+})
 
-//     console.log(chosen);
+app.delete("/api/notes/id", function(req, res) {
+    let newNote= []
+    for(let i =0; i < db.length; i++) {
+        if (db[i].id!==req.params.id){
+            newNote.push(db[i]);
+        }
+    }
+    
+    console.log("delete",newNote)
+    db=newNote
+    fs.writeFileSync("./db/db.json",JSON.stringify (db),function (error){
+        if (error) throw error
+        console.log(db);
+        res.json(db);
+    });
+})
 
-//     for (let i = 0; i < notes.length; i++) {
-//       if (chosen === notes[i].routeName) {
-//         return res.json(characters[i]);
-//       }
-//     }
 
-//     return res.json(false);
-//   });
+module.exports=app

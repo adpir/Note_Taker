@@ -60,6 +60,7 @@ const handleNoteSave = function () {
     getAndRenderNotes();
     renderActiveNote();
   });
+  renderActiveNote();
 };
 
 // Delete the clicked note
@@ -77,6 +78,7 @@ const handleNoteDelete = function (event) {
     getAndRenderNotes();
     renderActiveNote();
   });
+  renderActiveNote();
 };
 
 // Sets the activeNote and displays it
