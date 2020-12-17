@@ -51,8 +51,7 @@ fs.readFile("./db/db.json",(err, data) => {
     }) 
     
    
-   
 })
 
 
-module.exports=app
+module.exports=app;
