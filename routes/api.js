@@ -40,13 +40,7 @@ fs.readFile("../db/db.json",(err, data) => {
          console.log(newNote);
        }
      }
-//      fs.writeFile("../db/db.json", JSON.stringify(newNote), (err) {
-//       if (err) throw err;
-//       console.log(newNote);
-//      res.send(newNote);
-//    });
 
-//     }) 
     
    
    
