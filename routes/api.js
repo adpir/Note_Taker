@@ -22,21 +22,21 @@ app.post("/api/notes", function(req, res) {
     for(let i=0; i < newNote.length; i++) {
         newNote[i].id=i;
     }
-        // id:Math.floor(Math.random()*100),
-        // title: req.body.title,
-        // text:req.body.text,
+       Math.floor(Math.random()*100),
+       req.body.title,
+       req.body.text,
     newNote=JSON.stringify(newNote);
     fs.writeFileSync("./db/db.json",newNote);
     res.json(JSON.parse(newNote));
     
 
-    // console.log("post",newNote)
-    // db.push(newNote);
-    // fs.writeFileSync("./db/db.json", (db),function (error){
-    //     if (error) throw error
-    //     console.log(db);
-    //     res.json(db);
-    // });
+    console.log("post",newNote)
+     db.push(newNote);
+    fs.writeFileSync("./db/db.json", (db),function (error){
+     if (error) throw error
+       console.log(db);
+       res.json(db);
+   });
 })
 
 app.delete("/api/notes/id", function(req, res) {
