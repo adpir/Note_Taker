@@ -27,8 +27,6 @@ app.post("/api/notes", function(req, res) {
     fs.writeFileSync("./db/db.json",newNote);
     res.json(JSON.parse(newNote));
     
-
-    
 })
 
 app.delete("/api/notes/:id", function(req, res) {
