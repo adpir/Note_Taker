@@ -15,22 +15,24 @@ fs.readFile("./db/db.json",(err, data) => {
 
 
 app.post("/api/notes", function(req, res) {
-    let newNote= fs.readFileSync("./db/db.json", );
+    let newNote= fs.readFileSync("./db/db.json", "utf8");
     newNote = JSON.parse(newNote);
     newNote.push(req.body);
     console.log(req.body);
     for(let i=0; i < newNote.length; i++) {
         newNote[i].id=i;
     }
-      
+        
     newNote=JSON.stringify(newNote);
     fs.writeFileSync("./db/db.json",newNote);
     res.json(JSON.parse(newNote));
     
+
+    
 })
 
-app.delete("/api/notes/id", function(req, res) {
-fs.readFile("../db/db.json",(err, data) => {
+app.delete("/api/notes/:id", function(req, res) {
+fs.readFile("./db/db.json",(err, data) => {
    if (err) throw err;
     newNote=JSON.parse(data);
     console.log(newNote);
@@ -40,7 +42,13 @@ fs.readFile("../db/db.json",(err, data) => {
          console.log(newNote);
        }
      }
+     fs.writeFile("./db/db.json", JSON.stringify(newNote), (err) => {
+      if (err) throw err;
+      console.log(newNote);
+     res.send(newNote);
+   });
 
+    }) 
     
    
    
