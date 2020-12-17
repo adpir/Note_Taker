@@ -11,26 +11,19 @@
 ![JSON](https://img.shields.io/badge/JSON-orange.svg)
 ![VisualStudioCode](https://img.shields.io/badge/VSC-darkblue.svg)
 
+
+
+
 ## :memo: Description:
 
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the Heroku Guide for getting your app deployed on Heroku.
 
-### :clipboard: Table of Contents
-
-* [Usage](#Usage)
-
-* [Visuals](#Visuals)
-
-* [Installation](#Installation)
-
-* [Contributing](#Contributing)
-
-* [License](#License)
 
 ### :camera: Visuals:
 [images]("./assets/css/note.png)
+
 
 ### :computer: Installation:
 
@@ -55,9 +48,11 @@ The following API routes should be created as follows:
 - npm init
 - npm install
 
-### :terminal: Usage:
+
+###  Usage:
 
 `node server.js`
+
 
 ### :wave: Contributing:
 
@@ -65,10 +60,12 @@ Pull requests are welcome. For major changes,<br>
 please open an issue first to discuss what you would like to change.<br>
 Please make sure to update tests as appropriate.
 
+
 ### :octocat: Profile:
 
-[GitHub](https://github.com/adpir/Note_Taker)<br>
-All rights reserved.
+[GitHub](https://github.com/adpir/Note_Taker) All rights reserved.
+
+
 
 ### :copyright: License
 
