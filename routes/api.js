@@ -25,6 +25,9 @@ app.post("/api/notes", function(req, res) {
         // id:Math.floor(Math.random()*100),
         // title: req.body.title,
         // text:req.body.text,
+    newNote=JSON.stringify(newNote);
+    fs.writeFileSync("./db/db.json",newNote);
+    res.json(JSON.parse(newNote));
     
 
     // console.log("post",newNote)
@@ -36,13 +39,6 @@ app.post("/api/notes", function(req, res) {
     // });
 })
 
-
-
-
-
-    
-   
-   
 
 
 
