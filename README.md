@@ -30,8 +30,7 @@ You will not be able to deploy your server side code on GitHub pages. This app s
 - [License](#License)
 
 ### :camera: Visuals:
-
-
+[images]("./assets/css/note.png)
 
 ### :computer: Installation:
 

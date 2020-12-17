@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image: url("sticky_notes.png");
 }
 
 .save-note {
@@ -16,7 +17,7 @@ html, body {
 }
 
 .note-textarea, .note-title {
-  color: #000000;
+  color: darkblue;
   width: 100%;
   outline: none;
   border: none;
@@ -26,6 +27,14 @@ html, body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  background-color:rgba(249, 213, 105, 0.936);
+  opacity:0.8;
+  font-size: 20px; 
+}
+
+.display-4 {
+   font-family: 'Bentham', serif;
+
 }
 
 .note-title {
@@ -35,15 +44,21 @@ html, body {
 }
 
 .note-title:read-only, .note-textarea:read-only {
-  color: #757575;
+  color: grey;
 }
+
 
 .list-container .card {
   height: calc(100vh - 70px);
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+ 
 }
+
+ .card{
+  background-color: rgb(222, 222, 222);
+} 
 
 .list-container {
   padding-left: 0;
@@ -55,10 +70,11 @@ html, body {
   border-top: none;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  background-color: rgb(222, 222, 222);
 }
 
 .list-container i {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
@@ -67,4 +83,6 @@ html, body {
   border-right: none;
   padding: 20px;
   cursor: pointer;
+  background-color: rgb(222, 222, 222);
+
 }
