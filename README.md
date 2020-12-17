@@ -19,15 +19,15 @@ You will not be able to deploy your server side code on GitHub pages. This app s
 
 ### :clipboard: Table of Contents
 
-- [Usage](#Usage)
+* [Usage](#Usage)
 
-- [Visuals](#Visuals)
+* [Visuals](#Visuals)
 
-- [Installation](#Installation)
+* [Installation](#Installation)
 
-- [Contributing](#Contributing)
+* [Contributing](#Contributing)
 
-- [License](#License)
+* [License](#License)
 
 ### :camera: Visuals:
 [images]("./assets/css/note.png)
