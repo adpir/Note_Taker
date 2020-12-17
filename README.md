@@ -22,7 +22,7 @@ You will not be able to deploy your server side code on GitHub pages. This app s
 
 
 ### :camera: Visuals:
-[images]("./assets/css/note.png)
+[images](./public/assets/css/note.png)
 
 
 ### :computer: Installation:
