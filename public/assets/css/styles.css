@@ -26,7 +26,7 @@ html, body {
 .note-textarea {
   resize: none;
   height: calc(100% - 63px);
-  padding-top: 15px;
+  padding-top: 10px;
   background-color:rgba(249, 213, 105, 0.936);
   opacity:0.8;
   font-size: 20px; 
@@ -38,9 +38,10 @@ html, body {
 }
 
 .note-title {
-  height: 50px;
+  height: 58px;
   margin-top: 13px;
   font-size: 3rem;
+
 }
 
 .note-title:read-only, .note-textarea:read-only {
