@@ -22,7 +22,9 @@ You will not be able to deploy your server side code on GitHub pages. This app s
 
 
 ### :camera: Visuals:
-![images](./public/assets/css/note.png)
+![images](./public/assets/css/note.png) <br>
+![Giphy](./public/assets/css/code.gif)<br>
+![Giphy](./public/assets/css/css.gif)
 
 
 ### :computer: Installation:
@@ -44,6 +46,7 @@ The following API routes should be created as follows:
 - Terminal
 - Visual Studio Code
 - Git Lab
+- GitHub
 - Heroku
 - npm init
 - npm install
@@ -63,10 +66,10 @@ Please make sure to update tests as appropriate.
 
 ### :octocat: Profile:
 
-[GitHub](https://github.com/adpir/Note_Taker) All rights reserved.
+[GitHub](https://github.com/adpir/Note_Taker) 
 
 
 
 ### :copyright: License
 
-[MIT](https://github.com/adpir/Note_Taker/blob/main/LICENSE)
+[MIT](https://github.com/adpir/Note_Taker/blob/main/LICENSE) All rights reserved.
